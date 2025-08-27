@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Страховая компания "Супер-Щит"</title>
+    <!-- Загружаем наш красивый костюм Bootstrap через теги static! -->
+    {% load static %}
+    <link href="{% static 'pages/css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+<body>
+    <!-- Простая навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Страховая "Супер-Щит"</a>
+        </div>
+    </nav>
+
+    <!-- Место, куда будет вставляться контент других страниц -->
+    <div class="container mt-4">
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+    <!-- Подключаем JavaScript из Bootstrap -->
+    <script src="{% static 'pages/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

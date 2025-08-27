@@ -1,0 +1,9 @@
+{% extends 'pages/base.html' %} <!-- Говорим: "Надень на меня костюм base.html!" -->
+
+{% block content %} <!-- Начинаем заполнять блок content -->
+<h1 class="text-primary">Добро пожаловать!</h1>
+<p>Мы лучшая страховая компания для супергероев и обычных людей!</p>
+<div class="alert alert-info">
+    {{ flatpage.content }} <!-- Здесь будет контент из админки -->
+</div>
+{% endblock content %}

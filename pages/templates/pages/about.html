@@ -1,0 +1,14 @@
+{% extends 'pages/base.html' %}
+
+{% block content %}
+<h1 style="font-family: 'Comic Sans MS'; font-size: 2.5em;">О нашей компании</h1> <!-- Меняем шрифт и размер! -->
+<p>Мы работаем с 2024 года!</p>
+
+<!-- Контент повторяется 2 раза! -->
+<div class="mb-3">
+    {{ flatpage.content }}
+</div>
+<div class="mb-3" style="background-color: lightyellow;">
+    {{ flatpage.content }}
+</div>
+{% endblock content %}
