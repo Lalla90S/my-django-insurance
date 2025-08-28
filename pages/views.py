@@ -10,6 +10,10 @@ class HomePageView(TemplateView):
 class AboutPageView(TemplateView):
     template_name = 'pages/about.html'
 
-# СЕКРЕТНАЯ комната! Только для админа.
+# Для всех зарегистрированных пользователей
 class SecretPageView(LoginRequiredMixin, TemplateView):
     template_name = 'pages/secret.html'
+    login_url = '/admin/login/'  # Куда перенаправлять неавторизованных
+
+class ServicesPageView(TemplateView):
+    template_name = 'pages/services.html'

@@ -37,12 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.flatpages',  # Уже добавили
-    'django.contrib.sites',      # <- ДОБАВЬ ЭТУ СТРОЧКУ!
-    'pages',                     # Наше приложение
+    'django.contrib.flatpages',  # ДОЛЖНО БЫТЬ
+    'django.contrib.sites',      # ДОЛЖНО БЫТЬ
+    'pages',
 ]
 
-SITE_ID = 1
+
+
 
 
 MIDDLEWARE = [
@@ -55,6 +56,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 ]
+
+SITE_ID = 1
 
 ROOT_URLCONF = 'insurance.urls'
 
